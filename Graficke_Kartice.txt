@@ -5,16 +5,16 @@ Deskripcija: Doper - Tech garancija 36 mjeseci
 Stanje Proizvoda: NOVO
 Ime proizvoda: Graficka karta 3060 12GB MANLI TWIN
 Cijena proizvoda: 
-PO DOGOVORU
-Prije 4 sekundi
-
+2.100 KMPrije 4 dana 
 Deskripcija: 
-Stanje Proizvoda: Oglas
+Stanje Proizvoda: NOVO
 Ime proizvoda: SAPPHIRE NITRO PLUS RX 6700 XT 12GB RX6700XT AMD
 Cijena proizvoda: 
-2.100 KMPrije 4 dana 
+PO DOGOVORU
+Prije 2 sekundi
+
 Deskripcija: NOVA - 2 GODINE GARANCIJE
-Stanje Proizvoda: NOVO
+Stanje Proizvoda: Oglas
 Ime proizvoda: I9-7900X / ASUS X299 DELUXE / RTX 3070
 Cijena proizvoda: 
 2.700 KMPrije 6 sati 
@@ -57,7 +57,7 @@ Deskripcija:
 Stanje Proizvoda: NOVO
 Ime proizvoda: EVGA NVIDIA GeForce RTX 3060 Ti
 Cijena proizvoda: 
-750 KMPrije 5 sati 
+750 KMPrije 6 sati 
 Deskripcija: 
 Stanje Proizvoda: KORIŠTENO
 Ime proizvoda: Sapphire PULSE RX 560
@@ -77,7 +77,7 @@ Deskripcija:
 Stanje Proizvoda: NOVO
 Ime proizvoda: ASUS STRIX GTX 1080 8GB
 Cijena proizvoda: 
-1.599 KMPrije 5 sati 
+1.599 KMPrije 6 sati 
 Deskripcija: 
 Stanje Proizvoda: NOVO
 Ime proizvoda: Radeon RX560 4GB
