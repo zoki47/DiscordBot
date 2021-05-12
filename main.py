@@ -34,7 +34,7 @@ async def on_message(message):
     return
 
   if message.content.startswith('$help'):
-    await message.channel.send('Commands!','$gpu')
+    await message.channel.send('Commands!''$gpu')
 
   if message.content.startswith('$gpu'):
     import backend
