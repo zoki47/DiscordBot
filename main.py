@@ -38,7 +38,7 @@ async def on_message(message):
 
   if message.content.startswith('$gpu'):
     import backend
-    list1 = "https://replit.com/@zoki47/Zoki-bot#Graficke_Kartice.html"
+    list1 = "https://zoki47.github.io/Zoki-bot/"
 
 
     
