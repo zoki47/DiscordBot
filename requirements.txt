@@ -1,4 +1,4 @@
-install discord.py
-install beautifulsoup4.py
-install gtts.py
+discord.py
+beautifulsoup4.py
+gtts.py
 
