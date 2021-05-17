@@ -1,4 +1,4 @@
- python3 pip install discord.py
- python3 pip install beautifulsoup4.py
- python3 pip install gtts.py
+install discord.py
+install beautifulsoup4.py
+install gtts.py
 
