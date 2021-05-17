@@ -79,4 +79,4 @@ async def on_member_remove(member):
       else: 
         await message.channel.send("Left" + member.mention)
         
-client.run(MY_TOKEN)      
+client.login(MY_TOKEN)      
