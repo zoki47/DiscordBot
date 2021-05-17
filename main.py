@@ -79,5 +79,4 @@ async def on_member_remove(member):
       else: 
         await message.channel.send("Left" + member.mention)
         
-penis = 'ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY'
-client.run(penis)      
+client.run('ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY')      
