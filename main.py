@@ -15,7 +15,7 @@ import os
 import sys
 import time
 from discord import Status 
-from discord import Embed
+from discord import Embed 
 import subprocess
 import asyncio
 import logging
@@ -24,29 +24,44 @@ from discord.ext import commands
 intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
+global listOfCommands
+listOfCommands = "$help,$gpu,$fuck Zoki"
 ###################################################
+#                   COMMANDS
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
 #if someone writes message that is picked up by bot
 @client.event
+#if statement below stops function from looping when bot see's his own message
 async def on_message(message):
   if message.author == client.user:
     return
 
   if message.content.startswith('$help'):
-    listaKomandi = "Lista komandi: $gpu"
-    await message.channel.send(listaKomandi)
+    await message.channel.send(listOfCommands)
 
   if message.content.startswith('$gpu'):
     import backend
     list1 = "https://zoki47.github.io/Zoki-bot/"      
-    await message.channel.send(list1)  
+    await message.channel.send(list1) 
+
+  if message.content.startswith('zoki'):
+    await message.channel.send("<:WICKED:840687370662969364>" + ' ' + 'fuck you too')
+  
+  if message.content.startswith('black'):
+    await message.channel.send("<:WideHard:842838001038262294>")
+  
+  if message.content.startswith(''):
+    await message.channel.send('STFU')
+    time.sleep(60)
 #if someone joins :D
 @client.event
 async def on_member_join(member):
+  #console notification
   print("Recognised that a member called " + member.name + " joined")
   @client.event
+  #if statement below stops function from looping when bot see's his own message
   async def on_message(message):
     if message.author == client.user:
         return
@@ -55,8 +70,10 @@ async def on_member_join(member):
 #if someone leaves :(
 @client.event
 async def on_member_remove(member):
+    #console notification
     print("Recognized that " + member.name + " left")
     @client.event
+    #if statement below stops function from looping when bot see's his own message
     async def on_message(message):
       if message.author == client.user:
         return
