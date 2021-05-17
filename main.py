@@ -42,7 +42,6 @@ async def on_message(message):
     await message.channel.send(listOfCommands)
 
   if message.content.startswith('$gpu'):
-    import backend
     list1 = "https://zoki47.github.io/Zoki-bot/"      
     await message.channel.send(list1) 
 
