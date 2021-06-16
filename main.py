@@ -55,7 +55,7 @@ async def on_message(message):
     await message.channel.send('STFU')
     time.sleep(300)
 #if someone joins :D
-@client.event
+#@client.event
 #async def on_member_join(member):
   #console notification
   #print("Recognised that a member called " + member.name + " joined")
@@ -67,7 +67,7 @@ async def on_message(message):
     #else:
       #await message.channel.send("Welcome" + member.mention)
 #if someone leaves :(
-@client.event
+#@client.event
 #async def on_member_remove(member):
     #console notification
     #print("Recognized that " + member.name + " left")
