@@ -30,25 +30,7 @@ global listOfCommands
 listOfCommands = "$help,$gpu,$fuck Zoki, $wow"
 ##################################################
 #@@@@@@@@@@@@@@@@@ RSS FEED @@@@@@@@@@@@@@@@@@@@@@
-def rssFeed():
-  feed = feedparser.parse("https://www.wowhead.com/news/rss/retail")
-  feed_entries = feed.entries
-
-  for entry in feed.entries:
-
-      article_title = entry.title
-      article_link = entry.link
-      article_published_at = entry.published # Unicode string
-      article_published_at_parsed = entry.published_parsed # Time object
-    
-      content = entry.summary
-
-      format0= ("{}[{}]".format(article_title, article_link))
-
-      articles = ("Published at {}".format(article_published_at))
-
-      content0=("Content {}".format(content))
-      return (format0,articles,content0)   
+   
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #                                                
