@@ -20,14 +20,40 @@ import subprocess
 import asyncio
 import logging
 from discord.ext import commands
+import webbrowser
+import feedparser
 ##################################################
 intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
 global listOfCommands
-listOfCommands = "$help,$gpu,$fuck Zoki"
-###################################################
-#                   COMMANDS
+listOfCommands = "$help,$gpu,$fuck Zoki, $wow"
+##################################################
+#@@@@@@@@@@@@@@@@@ RSS FEED @@@@@@@@@@@@@@@@@@@@@@
+def rssFeed():
+  feed = feedparser.parse("https://www.wowhead.com/news/rss/retail")
+  feed_entries = feed.entries
+
+  for entry in feed.entries:
+
+      article_title = entry.title
+      article_link = entry.link
+      article_published_at = entry.published # Unicode string
+      article_published_at_parsed = entry.published_parsed # Time object
+    
+      content = entry.summary
+
+      format0= ("{}[{}]".format(article_title, article_link))
+
+      articles = ("Published at {}".format(article_published_at))
+
+      content0=("Content {}".format(content))
+      return (format0,articles,content0)   
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#                                                
+#                     COMMANDS                   
+#                                                
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
@@ -54,6 +80,12 @@ async def on_message(message):
   if message.content.startswith(''):
     await message.channel.send('STFU')
     time.sleep(1000)
+    
+  if message.content.startswith('$wow'):  
+    await message.channel.send(rssFeed())
+#                                                             
+#                       Bot Member ;                          
+#                                                             
 #if someone joins :D
 @client.event
 async def on_member_join(member):
@@ -79,4 +111,4 @@ async def on_member_remove(member):
       else: 
         await message.channel.send("Left" + member.mention)
         
-client.run('ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY')      
+client.login('ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY')      
