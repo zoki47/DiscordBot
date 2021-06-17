@@ -55,28 +55,28 @@ async def on_message(message):
     await message.channel.send('STFU')
     time.sleep(300)
 #if someone joins :D
-#@client.event
-#async def on_member_join(member):
+@client.event
+async def on_member_join(member):
   #console notification
-  #print("Recognised that a member called " + member.name + " joined")
-  #@client.event
+  print("Recognised that a member called " + member.name + " joined")
+  @client.event
   #if statement below stops function from looping when bot see's his own message
-  #async def on_message(message):
-    #if message.author == client.user:
-        #return
-    #else:
-      #await message.channel.send("Welcome" + member.mention)
+  async def on_message(message):
+    if message.author == client.user:
+        return
+    else:
+      await message.channel.send("Welcome" + member.mention)
 #if someone leaves :(
-#@client.event
-#async def on_member_remove(member):
+@client.event
+async def on_member_remove(member):
     #console notification
-    #print("Recognized that " + member.name + " left")
-    #@client.event
+    print("Recognized that " + member.name + " left")
+    @client.event
     #if statement below stops function from looping when bot see's his own message
-    #async def on_message(message):
-      #if message.author == client.user:
-        #return
-      #else: 
-        #await message.channel.send("Left" + member.mention)
+    async def on_message(message):
+      if message.author == client.user:
+        return
+      else: 
+        await message.channel.send("Left" + member.mention)
         
 client.run('ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY')      
