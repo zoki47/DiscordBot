@@ -29,10 +29,6 @@ client = discord.Client(intents=intents)
 global listOfCommands
 listOfCommands = "$help,$gpu,$fuck Zoki, $wow"
 ##################################################
-#@@@@@@@@@@@@@@@@@ RSS FEED @@@@@@@@@@@@@@@@@@@@@@
-   
-
-#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #                                                
 #                     COMMANDS                   
 #                                                
@@ -62,9 +58,6 @@ async def on_message(message):
   if message.content.startswith(''):
     await message.channel.send('STFU')
     time.sleep(1000)
-    
-  #if message.content.startswith('$wow'):  
-    #await message.channel.send(rssFeed())
 #                                                             
 #                       Bot Member ;                          
 #                                                             
