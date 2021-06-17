@@ -53,7 +53,7 @@ async def on_message(message):
   
   if message.content.startswith(''):
     await message.channel.send('STFU')
-    time.sleep(300)
+    time.sleep(1000)
 #if someone joins :D
 @client.event
 async def on_member_join(member):
