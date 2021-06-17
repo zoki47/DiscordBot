@@ -81,8 +81,8 @@ async def on_message(message):
     await message.channel.send('STFU')
     time.sleep(1000)
     
-  if message.content.startswith('$wow'):  
-    await message.channel.send(rssFeed())
+  #if message.content.startswith('$wow'):  
+    #await message.channel.send(rssFeed())
 #                                                             
 #                       Bot Member ;                          
 #                                                             
