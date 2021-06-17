@@ -1,4 +1,7 @@
 discord
 beautifulsoup4
 gtts
+webbrowser
+feedparser
+
 
