@@ -25,7 +25,7 @@ intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
 global listOfCommands
-listOfCommands = "$help,$gpu,$fuck Zoki, $wow"
+listOfCommands = "$help,$gpu,$fuck Zoki,$wow"
 ##################################################
 #                                                
 #                     COMMANDS                   
