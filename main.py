@@ -20,8 +20,6 @@ import subprocess
 import asyncio
 import logging
 from discord.ext import commands
-import webbrowser
-import feedparser
 ##################################################
 intents = discord.Intents.default()
 intents.members = True
