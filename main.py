@@ -68,13 +68,14 @@ async def on_member_join(member):
 #if someone leaves :(
 @client.event
 async def on_member_remove(member):
-    #console notification
-    print("Recognized that " + member.name + " left")
-    @client.event
-    #if statement below stops function from looping when bot see's his own message
-    async def on_message(message):
-      if message.author == client.user:
-        return
-      else: 
-        await message.channel.send("Left" + member.mention)        
+   #console notification
+   print("Recognized that " + member.name + " left")
+   @client.event
+   #if statement below stops function from looping when bot see's his own message
+   async def on_message(message):
+     if message.author == client.user:
+       return
+     else: 
+       await message.channel.send("Left" + member.mention)
+        
 client.login("ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY")      
