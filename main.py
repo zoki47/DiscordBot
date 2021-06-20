@@ -26,10 +26,7 @@ intents.members = True
 client = discord.Client(intents=intents)
 global listOfCommands
 listOfCommands = "$help,$gpu,$fuck Zoki,$wow"
-##################################################
-#                                                
-#                     COMMANDS                   
-#                                                
+##################################################                                              
 @client.event
 async def on_ready():
   print('We have logged in as {0.user}'.format(client))
@@ -55,10 +52,7 @@ async def on_message(message):
   
   if message.content.startswith(''):
     await message.channel.send('STFU')
-    time.sleep(1000)
-#                                                             
-#                       Bot Member ;                          
-#                                                             
+    time.sleep(1000)                                                            
 #if someone joins :D
 @client.event
 async def on_member_join(member):
@@ -84,4 +78,4 @@ async def on_member_remove(member):
       else: 
         await message.channel.send("Left" + member.mention)
         
-client.login(ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY)      
+client.login('ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY')      
