@@ -76,6 +76,5 @@ async def on_member_remove(member):
       if message.author == client.user:
         return
       else: 
-        await message.channel.send("Left" + member.mention)
-        
+        await message.channel.send("Left" + member.mention)        
 client.login("ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY")      
