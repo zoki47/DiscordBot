@@ -47,7 +47,7 @@ async def on_message(message):
   if message.content.startswith('zoki'):
     await message.channel.send("<:WICKED:840687370662969364>" + ' ' + 'fuck you too')
   
-  if message.content.startswith('black'):
+  if message.content.startswith(''):
     await message.channel.send("<:WideHard:842838001038262294>")
   
   if message.content.startswith(''):
