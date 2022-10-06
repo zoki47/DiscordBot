@@ -25,7 +25,7 @@ intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
 global listOfCommands
-listOfCommands = "$help,$gpu,$fuck Zoki,$wow"
+listOfCommands = "$help,$gpu,$Zoki,$wow"
 ##################################################                                              
 @client.event
 async def on_ready():
@@ -78,4 +78,4 @@ async def on_member_remove(member):
     else: 
       await message.channel.send("Left" + member.mention)
         
-client.login("ODQyMDIxNTc0OTExNzIxNTEz.YJvPsw.NTWGwkL68wfB_f2K_QZLyRskmHY")      
+client.login("TOKEN")      
